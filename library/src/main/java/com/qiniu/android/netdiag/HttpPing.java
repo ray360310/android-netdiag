@@ -53,6 +53,9 @@ public final class HttpPing implements Task {
             }
             InputStream is = httpConn.getInputStream();
             int len = httpConn.getContentLength();
+            if (len<0) {
+                len = MAX;
+            }
 //            len = len > MAX || len < 0 ? MAX : len;
             byte[] data = new byte[len];
             int read = is.read(data);
