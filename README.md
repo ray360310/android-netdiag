@@ -5,6 +5,8 @@
 [![Build Status](https://travis-ci.org/qiniu/android-netdiag.svg?branch=master)](https://travis-ci.org/qiniu/android-netdiag)
 [![Latest Stable Version](http://img.shields.io/maven-central/v/com.qiniu/android-netdiag.svg)](https://github.com/qiniu/android-netdiag/releases)
 
+更改HttpPing length 長度為65536限制
+
 ## [中文](https://github.com/qiniu/android-netdiag/blob/master/README_cn.md)
 
 ## Summary
