@@ -68,11 +68,19 @@ public final class HttpPing implements Task {
                 return;
             }
             if (read < data.length) {
-                byte[] b = new byte[read];
-                System.arraycopy(data, 0, b, 0, read);
-                Result r = new Result(responseCode, headers, b, (int) duration, "no body");
-                this.complete.complete(r);
-
+                int tempNum = 0;
+                for (int m = 0 ; m < data.length ; m++){
+                    tempNum += data[m];
+                }
+                int jjj = 1;
+                jjj +=1;
+                jjj = 1+100;
+//                Result r = new Result(responseCode, headers, data, (int) duration, "no body");
+//                this.complete.complete(r);
+//                byte[] b = new byte[read];
+//                System.arraycopy(data, 0, b, 0, read);
+//                Result r = new Result(responseCode, headers, b, (int) duration, "no body");
+//                this.complete.complete(r);
             }
         } catch (IOException e) {
             e.printStackTrace();
