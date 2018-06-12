@@ -4,7 +4,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b2e83b-ed24-467e-86f1-e2388a1db05f" name="Default" comment="">
+    <list default="true" id="78b2e83b-ed24-467e-86f1-e2388a1db05f" name="Default" comment="fix arraycopy problem">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/library/src/main/java/com/qiniu/android/netdiag/HttpPing.java" afterPath="$PROJECT_DIR$/library/src/main/java/com/qiniu/android/netdiag/HttpPing.java" />
     </list>
@@ -38,8 +38,8 @@
       <file leaf-file-name="HttpPing.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/src/main/java/com/qiniu/android/netdiag/HttpPing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="75" column="42" lean-forward="false" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
+            <state relative-caret-position="104">
+              <caret line="61" column="12" lean-forward="false" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#892#1011#0" expanded="true" />
@@ -58,6 +58,11 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -2148,7 +2153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528819249352</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix arraycopy problem">
+      <created>1528819989851</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1528819989851</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2163,7 +2175,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57236844" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.57236844" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2229,7 +2241,8 @@
     <MESSAGE value="don't use inputStream.available(), test httpurlconnection.timeout" />
     <MESSAGE value="test another way to get data size" />
     <MESSAGE value="adjust get file size and data" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjust get file size and data" />
+    <MESSAGE value="fix arraycopy problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix arraycopy problem" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2259,8 +2272,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/src/main/java/com/qiniu/android/netdiag/HttpPing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="75" column="42" lean-forward="false" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
+        <state relative-caret-position="104">
+          <caret line="61" column="12" lean-forward="false" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#892#1011#0" expanded="true" />
