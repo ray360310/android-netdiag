@@ -3,6 +3,8 @@ package com.qiniu.android.netdiag;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
@@ -59,6 +61,12 @@ public final class HttpPing implements Task {
             }
 //            len = len > MAX || len < 0 ? MAX : len;
             byte[] data = new byte[len];
+            int bytesRead;
+            int totalBytesRead = 0;
+            while ((bytesRead = is.read(data))>0){
+                totalBytesRead += bytesRead;
+            }
+
             int read = is.read(data);
             long duration = System.currentTimeMillis() - start;
             out.write("Done, duration " + duration + "ms");
