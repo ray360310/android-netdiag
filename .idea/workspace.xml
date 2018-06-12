@@ -4,7 +4,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b2e83b-ed24-467e-86f1-e2388a1db05f" name="Default" comment="">
+    <list default="true" id="78b2e83b-ed24-467e-86f1-e2388a1db05f" name="Default" comment="use">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/library/src/main/java/com/qiniu/android/netdiag/HttpPing.java" afterPath="$PROJECT_DIR$/library/src/main/java/com/qiniu/android/netdiag/HttpPing.java" />
     </list>
@@ -38,8 +38,8 @@
       <file leaf-file-name="HttpPing.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/src/main/java/com/qiniu/android/netdiag/HttpPing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="77" column="94" lean-forward="false" selection-start-line="77" selection-start-column="94" selection-end-line="78" selection-end-column="42" />
+            <state relative-caret-position="519">
+              <caret line="71" column="42" lean-forward="true" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
               <folding>
                 <element signature="e#814#933#0" expanded="true" />
                 <element signature="e#932#933#0" expanded="true" />
@@ -2098,7 +2098,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528789124846</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="test datalength2">
+      <created>1528790335137</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1528790335137</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2172,7 +2179,8 @@
     <MESSAGE value="取消HttpPing byte長度為65536的限制" />
     <MESSAGE value="修正length&lt;0情況" />
     <MESSAGE value="test datalength" />
-    <option name="LAST_COMMIT_MESSAGE" value="test datalength" />
+    <MESSAGE value="test datalength2" />
+    <option name="LAST_COMMIT_MESSAGE" value="test datalength2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2201,8 +2209,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/src/main/java/com/qiniu/android/netdiag/HttpPing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="77" column="94" lean-forward="false" selection-start-line="77" selection-start-column="94" selection-end-line="78" selection-end-column="42" />
+        <state relative-caret-position="519">
+          <caret line="71" column="42" lean-forward="true" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
           <folding>
             <element signature="e#814#933#0" expanded="true" />
             <element signature="e#932#933#0" expanded="true" />
