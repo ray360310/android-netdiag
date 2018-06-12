@@ -58,7 +58,7 @@ public final class HttpPing implements Task {
             }
 //            len = len > MAX || len < 0 ? MAX : len;
             byte[] data = new byte[len];
-            int read = is.read(data);
+            int read = is.available();
             long duration = System.currentTimeMillis() - start;
             out.write("Done, duration " + duration + "ms");
             is.close();
@@ -69,6 +69,7 @@ public final class HttpPing implements Task {
             }
             if (read < data.length) {
                 if (len == MAX) {
+
                     byte[] b = new byte[read];
                     System.arraycopy(data, 0, b, 0, read);
                     Result r = new Result(responseCode, headers, b, (int) duration, "no body");
