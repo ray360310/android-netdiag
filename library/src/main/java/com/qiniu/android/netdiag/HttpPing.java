@@ -61,32 +61,42 @@ public final class HttpPing implements Task {
             }
 //            len = len > MAX || len < 0 ? MAX : len;
             byte[] data = new byte[len];
+            byte[] mData;
             int bytesRead;
             int totalBytesRead = 0;
+//            int read = is.read(data);
+            long duration = System.currentTimeMillis() - start;
+            out.write("Done, duration " + duration + "ms");
             while ((bytesRead = is.read(data))>0){
                 totalBytesRead += bytesRead;
             }
-
-            int read = is.read(data);
-            long duration = System.currentTimeMillis() - start;
-            out.write("Done, duration " + duration + "ms");
             is.close();
-            if (read <= 0) {
+            if (totalBytesRead>0) {
+                mData = new byte[totalBytesRead];
+                System.arraycopy(data,0,mData,0,totalBytesRead);
+                Result r = new Result(responseCode, headers, mData, (int) duration, "no body");
+                this.complete.complete(r);
+            }else {
                 Result r = new Result(responseCode, headers, null, (int) duration, "no body");
                 this.complete.complete(r);
                 return;
             }
-            if (read < data.length) {
-                if (len == MAX) {
-                    byte[] b = new byte[read];
-                    System.arraycopy(data, 0, b, 0, read);
-                    Result r = new Result(responseCode, headers, b, (int) duration, "no body");
-                    this.complete.complete(r);
-                }else {
-                    Result r = new Result(responseCode, headers, data, (int) duration, "no body");
-                    this.complete.complete(r);
-                }
-            }
+//            if (read <= 0) {
+//                Result r = new Result(responseCode, headers, null, (int) duration, "no body");
+//                this.complete.complete(r);
+//                return;
+//            }
+//            if (read < data.length) {
+//                if (len == MAX) {
+//                    byte[] b = new byte[read];
+//                    System.arraycopy(data, 0, b, 0, read);
+//                    Result r = new Result(responseCode, headers, b, (int) duration, "no body");
+//                    this.complete.complete(r);
+//                }else {
+//                    Result r = new Result(responseCode, headers, data, (int) duration, "no body");
+//                    this.complete.complete(r);
+//                }
+//            }
         } catch (IOException e) {
             e.printStackTrace();
             long duration = System.currentTimeMillis() - start;
