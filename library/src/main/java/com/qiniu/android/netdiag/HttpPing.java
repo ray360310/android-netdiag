@@ -59,7 +59,6 @@ public final class HttpPing implements Task {
             if (len<0) {
                 len = MAX;
             }
-            
             byte[] data = new byte[len];
             byte[] mData;
             int bytesRead;
